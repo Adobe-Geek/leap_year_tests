@@ -9,17 +9,14 @@ def is_year_leap(year):
 
 def days_in_month(year, month):
     if is_year_leap(year):
-        month = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-        return month[i]
+        month_len = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+        # print(month_len[month - 1])
+        return month_len[month - 1]
     else:
-        month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-        print(month[i])
-        return month[i]
+        month_len = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+        # print(month_len[month - 1])
+        return month_len[month - 1]
 
-
-#
-# Write your new code here.
-#
 
 test_years = [1900, 2000, 2016, 1987]
 test_months = [2, 2, 1, 11]
