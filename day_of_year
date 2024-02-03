@@ -25,16 +25,16 @@ def day_of_year(year, month, day):
         for i in month_len[: month - 1]:
             total += i
         day = day + total
-        # return day
-        print(day)
+        return day
+        # print(day)
     else:
         month_len = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
         total = 0
         for i in month_len[: month - 1]:
             total += i
         day = day + total
-        # return day
-        print(day)
+        return day
+        # print(day)
 
 
 print(day_of_year(2023, 4, 3))
